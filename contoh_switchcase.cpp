@@ -8,6 +8,7 @@ double hitungIpk(double total, int sks)
 
 string predikat(double ipk)
 {
+   
     if (ipk < 10)
     {
         return "Memuaskan";
@@ -36,7 +37,7 @@ int main()
 
         switch (pilihan)
         {
-            case '1';
+        case '1':
             cout << "Masukkan total nilai = ";
             cin >> total;
             cout << "Masukkan jumlah sks = ";
@@ -44,9 +45,10 @@ int main()
 
             cout << "Nilai Ipk = " << hitungIpk(total, sks);
             break;
-            case '2';
-            cout << "Predikat anda adalah = " << predikat(hitungIpk(total, sks)) endl;
-            case '3';
+        case '2':
+            cout << "Predikat anda adalah = " << predikat(hitungIpk(total, sks)) << endl;
+            break;
+        case '3':
             break;
 
             default:
